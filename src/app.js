@@ -41,7 +41,7 @@ const app = http.createServer((req, res) => {
 
   if (pathname === '/fs') {
     if (q.operation === 'create') {
-      const filePath = path.join(process.cwd(), q.filename);
+     const filePath = path.join(__dirname, '..', q.filename);
 
       fs.writeFile(filePath, q.text ?? '', (err) => {
         if (err) {
@@ -57,7 +57,7 @@ const app = http.createServer((req, res) => {
     }
 
     if (q.operation === 'read') {
-      const filePath = path.join(process.cwd(), q.filename);
+     const filePath = path.join(__dirname, '..', q.filename);
 
       fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
