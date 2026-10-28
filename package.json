@@ -1,0 +1,23 @@
+{
+  "name": "lesson_5_http_fs_modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "js",
+    "node.js",
+    "http",
+    "fs",
+    "server"
+  ],
+  "author": "Nick Sotula",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.1",
+    "supertest": "^6.3.3"
+  }
+}
